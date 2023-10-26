@@ -1,3 +1,20 @@
+/* imports */
+* {
+  margin: 0%;
+  padding: 0%;
+}
 
+.bg-nav {
+  background-color: black;
+}
+
+/*  ENLACES MODIFICADOS DE COLOR  */
+.navbar-nav a {
+  color: #969799;
+}
+
+.navbar-brand {
+  color: #FF64AA;
+}
 
 /*# sourceMappingURL=style.css.map */
