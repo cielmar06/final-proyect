@@ -1,7 +1,12 @@
 /* imports */
 //base 
 @import './base/reset';
-//header
+
+//layout
+@import './layout/body';
 @import './layout/header';
-// main
 @import './layout/main-inicio';
+@import './layout/footer';
+@import './layout/medias-query';
+//components
+@import './components/whatsApp';
