@@ -18,8 +18,6 @@
     }
 
 
-
-
 @media screen and ( min-width:481px)
    { .main-inicio{
      img{
@@ -84,3 +82,23 @@
 margin-top: 10px}
 }
 }
+
+// Medias query remeras niño, dama, caballero
+
+@media screen and (min-width:300px) {
+    .remeras1{ display:block;   
+     img { 
+         padding: 30px;
+        margin-block: 30px;}
+    
+}
+
+}
+
+    @media screen and (min-width:300px) {
+        .remeras2 { display:block;
+            img{
+                 padding: 30px;
+                margin-block: 30px; }
+      }
+    }
