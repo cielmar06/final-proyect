@@ -67,7 +67,9 @@ img{   grid-column: 2/9;
     img{ position: absolute;
         top: 80px;
         margin-left: 450px;
-        ;
+        animation-name:rotacion_logos;
+        animation-timing-function: ease-in;
+        animation-duration: 6s;
     }
 
     

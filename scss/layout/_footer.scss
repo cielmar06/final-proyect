@@ -23,6 +23,11 @@
             display: flexbox;
             width: 30px;
             cursor: pointer;
+            animation-name:rotacion_logos;
+            animation-timing-function: ease-in;
+            animation-duration: 3s;
+            
+            }
             
             
             }
@@ -30,7 +35,7 @@
         
         }
    
-    }
+    
 
 
 // footer nosotros

@@ -95,6 +95,9 @@ body {
   position: absolute;
   top: 80px;
   margin-left: 450px;
+  animation-name: rotacion_logos;
+  animation-timing-function: ease-in;
+  animation-duration: 6s;
 }
 
 .mision {
@@ -134,6 +137,9 @@ body {
   display: flexbox;
   width: 30px;
   cursor: pointer;
+  animation-name: rotacion_logos;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
 }
 
 .footer {
@@ -238,14 +244,16 @@ body {
     transform: rotate(360deg);
   }
 }
-.footer img {
-  animation-name: rotacion_logos;
-  animation-timing-function: ease-in;
-  animation-duration: 3s;
-}
-
 .fixed-bottom img {
   width: 50px;
+}
+
+.rounded {
+  background-color: gray;
+  cursor: pointer;
+}
+.rounded:hover {
+  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
