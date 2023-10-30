@@ -1,0 +1,22 @@
+
+//animacion de logos de redes en el footer
+
+@keyframes rotacion_logos{
+
+    25%{ transform: rotate(90deg) ;
+        
+}
+50%{ transform: rotate(180deg);}
+
+75%{ transform: rotate(270deg);}
+
+100%{ transform: rotate(360deg);}
+}
+
+.footer img{
+
+    animation-name:rotacion_logos;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+}
+
