@@ -225,6 +225,14 @@ body {
     margin-block: 30px;
   }
 }
+@media screen and (min-width: 780px) {
+  .container-nosotros {
+    display: grid;
+    grid-template-areas: "header" " quienes-somos" "mision" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
 .container-nosotros {
   display: grid;
   grid-template-areas: "header" "header" "header" "header" " quienes-somos" "quienes-somos" "quienes-somos" "mision" "mision" "mision" "footer" "footer" "footer";
