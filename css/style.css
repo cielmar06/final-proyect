@@ -147,6 +147,38 @@ body {
   position: fixed;
 }
 
+.container-nosotros {
+  display: grid;
+  gap: 20px;
+  grid-template-areas: "header" "quienes-somos" "imagen-nosotros" "mision" "footer";
+}
+
+@keyframes rotacion_logos {
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.fixed-bottom img {
+  width: 50px;
+}
+
+.rounded {
+  background-color: gray;
+  cursor: pointer;
+}
+.rounded:hover {
+  background-color: white;
+}
+
 @media screen and (max-width: 480px) {
   .main-inicio img {
     width: 300px;
@@ -227,8 +259,6 @@ body {
 }
 @media screen and (min-width: 600px) {
   .container-nosotros {
-    grid-template-columns: auto;
-    grid-template-rows: auto;
     grid-template-areas: "header header" "quienes-somos imagen-nosotros" "mision mision " "footer footer";
     background-color: aqua;
   }
@@ -238,45 +268,12 @@ body {
 }
 @media screen and (min-width: 900px) {
   .container-nosotros {
-    grid-template-columns: auto;
-    grid-template-rows: auto;
     grid-template-areas: "header header header" "quienes-somos  quienes-somos imagen-nosotros" "mision  mision mision " "footer footer footer";
     background-color: red;
   }
   .container-nosotros .mision {
     margin-left: 500px;
   }
-}
-.container-nosotros {
-  display: grid;
-  gap: 20px;
-  grid-template-areas: "header" "quienes-somos" "imagen-nosotros" "mision" "footer";
-}
-
-@keyframes rotacion_logos {
-  25% {
-    transform: rotate(90deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  75% {
-    transform: rotate(270deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.fixed-bottom img {
-  width: 50px;
-}
-
-.rounded {
-  background-color: gray;
-  cursor: pointer;
-}
-.rounded:hover {
-  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
