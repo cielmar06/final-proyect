@@ -1,10 +1,11 @@
 .container-nosotros{
     display: grid;
-    grid-template-areas: 'header'  'header' 'header' 'header'
-                         ' quienes-somos' 'quienes-somos' 'quienes-somos'
-                         'mision' 'mision' 'mision'
-                         'footer''footer' 'footer';
-                              
+    gap: 20px;
+    grid-template-areas: 'header' 
+                         'quienes-somos'
+                         'imagen-nosotros'
+                         'mision' 
+                         'footer';               
 
 }
 

@@ -91,13 +91,15 @@ body {
   width: 300px;
   text-align: justify;
 }
-.quienes-somos img {
-  position: absolute;
-  top: 80px;
-  margin-left: 450px;
+
+.imagen-nosotros {
+  grid-area: imagen-nosotros;
   animation-name: rotacion_logos;
   animation-timing-function: ease-in;
   animation-duration: 6s;
+  width: 250px;
+  height: 250px;
+  margin-bottom: 40px;
 }
 
 .mision {
@@ -108,11 +110,9 @@ body {
 }
 .mision h3 {
   width: 250px;
-  margin-left: 500px;
 }
 .mision p {
   width: 300px;
-  margin-left: 500px;
   text-align: justify;
 }
 
@@ -225,17 +225,32 @@ body {
     margin-block: 30px;
   }
 }
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 600px) {
   .container-nosotros {
-    display: grid;
-    grid-template-areas: "header" " quienes-somos" "mision" "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "header header" "quienes-somos imagen-nosotros" "mision mision " "footer footer";
+    background-color: aqua;
+  }
+  .container-nosotros .mision {
+    margin-left: 550px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .container-nosotros {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header" "quienes-somos  quienes-somos imagen-nosotros" "mision  mision mision " "footer footer footer";
+    background-color: red;
+  }
+  .container-nosotros .mision {
+    margin-left: 500px;
   }
 }
 .container-nosotros {
   display: grid;
-  grid-template-areas: "header" "header" "header" "header" " quienes-somos" "quienes-somos" "quienes-somos" "mision" "mision" "mision" "footer" "footer" "footer";
+  gap: 20px;
+  grid-template-areas: "header" "quienes-somos" "imagen-nosotros" "mision" "footer";
 }
 
 @keyframes rotacion_logos {

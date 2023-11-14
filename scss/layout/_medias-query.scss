@@ -102,18 +102,37 @@ margin-top: 10px}
                 margin-block: 30px; }
       }
     }
- @media screen and ( min-width:780px) {
+
+//medias query de nosotros 
+
+
+@media screen and (min-width:600px){
     .container-nosotros{
-        display: grid;
-        grid-template-areas: 'header' 
-                            ' quienes-somos'  
-                             'mision' 
-                             'footer';
-                                  
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    }
+       grid-template-columns: auto;
+       grid-template-rows: auto;
+        grid-template-areas: 'header header'
+                              'quienes-somos imagen-nosotros'
+                              'mision mision '
+                              'footer footer';
+
+.mision{ margin-left: 550px;}        
+background-color: aqua;                 
+}
+
+}
+
+@media screen and (min-width:900px) {
+.container-nosotros{ 
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+     'header header header'
+    'quienes-somos  quienes-somos imagen-nosotros'
+    'mision  mision mision '
+    'footer footer footer';
     
- }
+    .mision{ margin-left: 500px;}
+    background-color: red;
+}
     
- 
+}
