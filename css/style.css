@@ -260,7 +260,6 @@ body {
 @media screen and (min-width: 600px) {
   .container-nosotros {
     grid-template-areas: "header header" "quienes-somos imagen-nosotros" "mision mision " "footer footer";
-    background-color: aqua;
   }
   .container-nosotros .mision {
     margin-left: 550px;
@@ -269,7 +268,6 @@ body {
 @media screen and (min-width: 900px) {
   .container-nosotros {
     grid-template-areas: "header header header" "quienes-somos  quienes-somos imagen-nosotros" "mision  mision mision " "footer footer footer";
-    background-color: red;
   }
   .container-nosotros .mision {
     margin-left: 500px;
